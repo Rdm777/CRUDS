@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+.josefin-sans {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.open-sans {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    align-items: center;
+    width: 500px;
+    margin: auto;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px rgb(200, 199, 199);
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+form {
+    width: 70%;
+}
+
+#login-title {
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #57b846;
+    margin-bottom: 3rem;
+}
+
+#login-title h1{
+    margin: 15px;
+}
+
+::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.600);
+}
+
+form input {
+    color: #3a7969;
+    text-indent: 1rem;
+    font-size: 17px;
+    background-color: rgba(0, 0, 0, 0.100);
+    width: 98%;
+    height: 55px;
+    margin-bottom: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+}
+
+form input:focus {
+    width: 100%;
+    height: 57px;
+    transition: 0.3s;
+}
+
+form p {
+    color: rgba(0, 0, 0, 0.600);
+    text-align: end;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.echo-php {
+    color: rgba(0, 0, 0, 0.428);
+    background-color: #57b84661;
+    display: flex;
+    justify-content: center;
+    margin: 3px auto;
+    border: none;
+    width: 500px;
+    border-radius: 8px;
+}
+
+form .trocar-senha {
+    margin-bottom: 7rem;
+}
+
+form a {
+    color: #57b846;
+    text-decoration: none;
+}
+
+form button {
+    color: black;
+    background-color: #57b846;
+    font-size: 17px;
+    width: 100%;
+    height: 55px;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 0rem 0rem 3rem 0rem;
+}
+
+form button:hover {
+    background-color: #538d49da;
+    transition: 0.5s;
+}

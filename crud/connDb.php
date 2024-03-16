@@ -1,0 +1,13 @@
+<?php 
+
+$hostname = "localhost";
+$database = "cadastro";
+$user = "root";
+$password = "";
+
+$conn = new mysqli($hostname, $user, $password, $database);
+if ($conn->connect_errno){
+    echo "Erro:  (" . $conn->connect_errno.")" . $conn->connect_error;
+}else {
+    //echo "<p style='color:white;'>Conexão realizada com sucesso</p>";
+};
