@@ -3,7 +3,7 @@
 $hostname = "localhost";
 $database = "cadastro";
 $user = "root";
-$password = "";
+$password = "1335036A";
 
 $conn = new mysqli($hostname, $user, $password, $database);
 if ($conn->connect_errno){
