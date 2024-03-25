@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<?php include "connDb.php" ?>
+<?php include "connDb.php";
+?>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +14,6 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
     <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css" rel="stylesheet" />
-
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -28,7 +29,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                         <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="index.php">Home</a>
+                            <a class="nav-link active text-white" href="index.php">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="?page=novo">Novo Usuario</a>

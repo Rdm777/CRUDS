@@ -1,13 +1,15 @@
 <?php 
-$sql = "SELECT * FROM usuarios WHERE id=" . $_GET['id'];
+
+$sql = "SELECT * FROM usuarios WHERE id=" . $_REQUEST['id'];
 $res_query = $conn->query($sql);
 $row = $res_query->fetch_object();
 ?>
 
 <h1>Editar Usuario</h1>
 
-<form action="?page=novo" method="post">
-    <input type="hidden" name="acao" value="cadastrar">
+<form action="?page=editar" method="post">
+    <input type="hidden" name="acao" value="editar">
+    <input type="hidden" name="id" value="<?=$row -> id?>">
     <div class="mb-3">
         <label for="nome" class="mt-3">Nome</label>
         <input type="text" name="nome" class="form-control" value="<?=$row -> nome?>">
@@ -22,8 +24,8 @@ $row = $res_query->fetch_object();
         <input type="email" name="email" class="form-control" value="<?=$row -> email?>">
 
         <label for="senha" class="mt-2">Senha</label>
-        <input type="password" name="senha" class="form-control" value="<?=$row -> senha?>">
+        <input type="password" name="senha" class="form-control" required>
 
-        <button type="submit" class="btn btn-secondary mt-3"> Cadastrar </button>
+        <button type="submit" class="btn btn-secondary mt-3"> Salvar </button>
     </div>
 </form>
